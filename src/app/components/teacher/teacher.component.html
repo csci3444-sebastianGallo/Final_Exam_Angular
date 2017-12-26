@@ -1,0 +1,24 @@
+<h1>
+    Final
+</h1>
+
+
+<button (click)="toggleToDisplayTeachers()">Please Click</button>
+
+
+
+
+
+<div *ngIf=isToDisplayTeachers>
+    <h3> Teachers List </h3>
+    <div *ngFor="let teacher of teachers">
+        <ul>
+            <li>Teacher ID: {{teacher.teacherId}}</li>
+            <li>Name: {{teacher.name}}</li>
+            <li>Last Name: {{teacher.lastname}}</li>
+            <!-- <li>Grade: {{teacher.Grade}}</li> -->
+            <li>Age: {{teacher.age}}</li>
+            <li>isFullTime: {{teacher.isFullTime}}</li>
+        </ul>
+    </div>
+</div>
